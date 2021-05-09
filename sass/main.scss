@@ -1,0 +1,25 @@
+@import './utils/variables';
+@import './utils/placeholders';
+@import './utils/mixins';
+@import './base/common';
+
+@import './components/page-header';
+@import './components/logo';
+@import './components/main-nav';
+@import './components/contacts-nav';
+@import './components/section';
+@import './components/hero';
+@import './components/buttons';
+@import './components/advantages';
+@import './components/works';
+@import './components/team';
+@import './components/social';
+@import './components/clients';
+@import './components/page-footer';
+@import './components/subscribe-form';
+@import './components/backdrop';
+@import './components/modal';
+@import './components/contacts-form';
+
+@import './components/portfolio';
+@import './components/portfolio-cards';

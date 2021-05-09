@@ -1,0 +1,13 @@
+.page-header {
+  border-bottom: 1px solid $line-color;
+  position: fixed;
+  top: 80px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: $primary-white-color;
+  z-index: 5;
+}
+.page-header__wrap {
+  @extend %flex-centered;
+}
