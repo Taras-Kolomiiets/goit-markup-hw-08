@@ -10,4 +10,6 @@
 }
 .page-header__wrap {
   @extend %flex-centered;
+
+  position: relative;
 }

@@ -4,14 +4,20 @@
   &__list {
     @extend %list;
 
-    display: flex;
+    @media screen and (min-width: $tablet-width) {
+      display: flex;
+    }
   }
   &__list-item {
-    flex-basis: calc(100% / 4);
-    margin-right: 30px;
+    @media screen and (min-width: $tablet-width) {
+      flex-basis: calc(100% / 2);
+      margin-right: 30px;
+    }
   }
   &__list-item:last-child {
-    margin-right: 0;
+    @media screen and (min-width: $tablet-width) {
+      margin-right: 0;
+    }
   }
   &__thumb {
     margin-bottom: 30px;
