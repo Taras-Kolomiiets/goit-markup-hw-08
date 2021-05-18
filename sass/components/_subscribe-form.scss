@@ -2,6 +2,16 @@
   display: flex;
   width: 100%;
 
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and (min-width: $desktop) {
+    min-width: 570px;
+    margin-left: 93px;
+  }
+
   &__input {
     width: 358px;
     height: 50px;
@@ -15,6 +25,13 @@
 
     color: $primary-white-color;
     background-color: $bg-color;
+
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 20px;
+
+      max-width: 450px;
+      height: 50px;
+    }
   }
 
   &__input::placeholder {

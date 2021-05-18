@@ -1,15 +1,33 @@
 .portfolio {
   &__services-list {
     @extend %list;
-    @extend %flex-centered;
+    // @extend %flex-centered;
 
     margin-bottom: 50px;
+
+    @media screen and (min-width: 320px) and (max-width: $mobile) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+      margin-top: -15px;
+      margin-left: -8px;
+    }
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-wrap: nowrap;
+      margin-bottom: 40px;
+      justify-content: center;
+    }
   }
   &__service-item {
-    display: flex;
-    margin-right: 8px;
-  }
-  &__service-item:last-child {
-    margin-right: 0px;
+    @media screen and (min-width: $mobile) and (max-width: 767px) {
+      margin-top: 15px;
+      margin-left: 8px;
+    }
+    @media screen and (min-width: $tablet) {
+      &:not(:last-child) {
+        margin-right: 8px;
+      }
+    }
   }
 }

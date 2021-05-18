@@ -3,20 +3,29 @@
     @extend %list;
 
     display: flex;
+
+    flex-wrap: wrap;
+    margin: -15px;
     text-decoration: none;
   }
 
   &__item {
-    padding: 0;
-    margin: 0;
-
     border-radius: 4px;
 
     color: $social-links-color;
-  }
 
-  &__item:not(:last-child) {
-    margin-right: 30px;
+    @media screen and (max-width: 767px) {
+      flex-basis: calc((100% - 2 * 30px) / 2);
+      margin: 15px;
+    }
+    @media screen and (min-width: $tablet) {
+      flex-basis: calc((100% - 3 * 30px) / 3);
+      margin: 15px;
+    }
+    @media screen and (min-width: $desktop) {
+      flex-basis: calc((100% - 180px) / 6);
+      margin: 15px;
+    }
   }
 
   &__link {
@@ -31,6 +40,12 @@
     color: $social-links-color;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: $mobile) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &__link:hover,
