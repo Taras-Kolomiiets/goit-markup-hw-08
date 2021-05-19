@@ -36,13 +36,13 @@
           $overlay-color,
           $overlay-color
         ),
-        url('../../images/hero-mobile@2x.jpg');
+        url('./images/hero-mobile@2x.jpg');
       background-size: cover;
     }
   }
   @media screen and (min-width: $tablet) {
     background-image: linear-gradient(to right, $overlay-color, $overlay-color),
-      url('../../images/hero-tablet@2x.jpg');
+      url('./images/hero-tablet@2x.jpg');
     background-size: cover;
   }
   @media screen and (min-width: $desktop) {
@@ -51,7 +51,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url('../../images/hero-desktop@2x.jpg');
+      url('./images/hero-desktop@2x.jpg');
     background-size: cover;
   }
 
@@ -64,7 +64,7 @@
           $overlay-color,
           $overlay-color
         ),
-        url('../../images/hero-mobile@3x.jpg');
+        url('./images/hero-mobile@3x.jpg');
       background-size: cover;
     }
     @media screen and (min-width: $tablet) {
@@ -73,7 +73,7 @@
           $overlay-color,
           $overlay-color
         ),
-        url('../../images/hero-tablet@3x.jpg');
+        url('./images/hero-tablet@3x.jpg');
       background-size: cover;
     }
     @media screen and (min-width: $desktop) {
@@ -82,7 +82,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url('../../images/hero-desktop@3x.jpg');
+        url('./images/hero-desktop@3x.jpg');
       background-size: cover;
     }
   }
