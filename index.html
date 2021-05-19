@@ -140,6 +140,10 @@
             <li class="works__list-item">
               <div class="works__thumb">
                 <img
+                  srcset="
+                    ./images/example_1.jpg    1x,
+                    ./images/example_1@2x.jpg 2x
+                  "
                   src="./images/example_1.jpg"
                   alt="Человек за комп'ютером"
                   width="370"
@@ -152,6 +156,10 @@
             <li class="works__list-item">
               <div class="works__thumb">
                 <img
+                  srcset="
+                    ./images/example_2.jpg    1x,
+                    ./images/example_2@2x.jpg 2x
+                  "
                   src="./images/example_2.jpg"
                   alt="Человек с телефоном в руке"
                   width="370"
@@ -164,6 +172,10 @@
             <li class="works__list-item">
               <div class="works__thumb">
                 <img
+                  srcset="
+                    ./images/example_3.jpg    1x,
+                    ./images/example_3@2x.jpg 2x
+                  "
                   src="./images/example_3.jpg"
                   alt="Планшет с изображением цветов"
                   width="370"
@@ -182,12 +194,28 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__list-item">
-              <img
-                class="team__photo"
-                src="./images/employee_1.jpg"
-                alt="Фото Игоря Демьяненко"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/employee_1.jpg 1x, ./images/team01@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team01-tablet.jpg    1x,
+                    ./images/team01-tablet@2x.jpg 2x
+                  "
+                />
+                <img
+                  srcset="
+                    ./images/team01-mobile.jpg    1x,
+                    ./images/team01-mobile@2x.jpg 2x
+                  "
+                  src="./images/team01-mobile.jpg"
+                  alt="Фото Игоря Демьяненко"
+                  class="team__photo"
+                />
+              </picture>
 
               <h3 class="team__member">Игорь Демьяненко</h3>
               <p class="team__position">Product Designer</p>
@@ -223,12 +251,28 @@
               </ul>
             </li>
             <li class="team__list-item">
-              <img
-                class="team__photo"
-                src="./images/employee_2.jpg"
-                alt="Фото Ольги Репиной"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/employee_2.jpg 1x, ./images/team02@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team02-tablet.jpg    1x,
+                    ./images/team02-tablet@2x.jpg 2x
+                  "
+                />
+                <img
+                  srcset="
+                    ./images/team02-mobile.jpg    1x,
+                    ./images/team02-mobile@2x.jpg 2x
+                  "
+                  src="./images/team02-mobile.jpg"
+                  alt="Фото Ольги Репиной"
+                  class="team__photo"
+                />
+              </picture>
 
               <h3 class="team__member">Ольга Репина</h3>
               <p class="team__position">Frontend Developer</p>
@@ -264,12 +308,28 @@
               </ul>
             </li>
             <li class="team__list-item">
-              <img
-                class="team__photo"
-                src="./images/employee_3.jpg"
-                alt="Фото Николая Тарасова"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/employee_3.jpg 1x, ./images/team03@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team03-tablet.jpg    1x,
+                    ./images/team03-tablet@2x.jpg 2x
+                  "
+                />
+                <img
+                  srcset="
+                    ./images/team03-mobile.jpg    1x,
+                    ./images/team03-mobile@2x.jpg 2x
+                  "
+                  src="./images/team03-mobile.jpg"
+                  alt="Фото Николая Тарасова"
+                  class="team__photo"
+                />
+              </picture>
 
               <h3 class="team__member">Николай Тарасов</h3>
               <p class="team__position">Marketing</p>
@@ -305,12 +365,28 @@
               </ul>
             </li>
             <li class="team__list-item">
-              <img
-                class="team__photo"
-                src="./images/employee_4.jpg"
-                alt="Фото Михаила Ермакова"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/employee_4.jpg 1x, ./images/team04@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team04-tablet.jpg    1x,
+                    ./images/team04-tablet@2x.jpg 2x
+                  "
+                />
+                <img
+                  srcset="
+                    ./images/team04-mobile.jpg    1x,
+                    ./images/team04-mobile@2x.jpg 2x
+                  "
+                  src="./images/team04-mobile.jpg"
+                  alt="Фото Михаила Ермакова"
+                  class="team__photo"
+                />
+              </picture>
 
               <h3 class="team__member">Михаил Ермаков</h3>
               <p class="team__position">UI Designer</p>
