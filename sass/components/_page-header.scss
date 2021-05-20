@@ -1,6 +1,6 @@
 .page-header {
   border-bottom: 1px solid $line-color;
-  // position: fixed;
+  position: relative;
   // top: 80px;
   // width: 100%;
   // top: 0;
@@ -10,7 +10,7 @@
 }
 
 .page-header__container {
-  position: relative;
+  // position: relative;
   z-index: 1;
 }
 .page-header__wrap {
