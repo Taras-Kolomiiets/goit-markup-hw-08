@@ -111,13 +111,6 @@ img {
           justify-content: space-between;
 }
 
-@media screen and (max-width: 767px) {
-  .page-header__wrap {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .page-header__logo {
     margin-right: 88px;
@@ -168,12 +161,6 @@ img {
 
 .logo--inversion {
   color: #ffffff;
-}
-
-@media screen and (max-width: 767px) {
-  .logo {
-    margin: 16px 15px;
-  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -1038,6 +1025,7 @@ img {
   visibility: visible;
   z-index: 6;
   opacity: 1;
+  overflow-y: scroll;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1059,10 +1047,10 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-  width: 100%;
+  width: calc(100% - 30px);
   max-width: 528px;
-  height: 100%;
-  max-height: 581px;
+  max-height: calc(100% - 30px);
+  overflow-y: auto;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1244,6 +1232,13 @@ img {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 1199px) {
+  .form__field {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
+
 .form__checkbox {
   /* -webkit-appearance: none;
   -moz-appearance: none;
@@ -1307,6 +1302,7 @@ img {
 
 .form__button-thumb {
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .mobile-menu {
@@ -1433,8 +1429,10 @@ img {
 }
 
 .mobile-menu__btn {
-  position: relative;
-  z-index: 99;
+  position: fixed;
+  top: 18px;
+  right: 15px;
+  z-index: 100;
   width: 40px;
   height: 40px;
   padding: 0;
@@ -1446,8 +1444,9 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mobile-menu__btn:hover, .mobile-menu__btn:focus {
-  color: #2196f3;
+.mobile-menu__btn .mobile-menu__btn:hover,
+.mobile-menu__btn .mobile-menu__btn:focus {
+  fill: #2196f3;
 }
 
 @media screen and (min-width: 768px) {
@@ -1466,6 +1465,7 @@ img {
 
 .is-open .menu-btn__icon-close {
   display: block;
+  visibility: visible;
 }
 
 .portfolio__services-list {
