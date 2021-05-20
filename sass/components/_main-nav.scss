@@ -1,11 +1,16 @@
 .main-nav {
   @extend %flex-centered;
 
+  @media screen and (min-width: 768px) {
+    margin-left: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
   &__list {
     @extend %list;
 
     display: flex;
-    margin-left: 93px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;

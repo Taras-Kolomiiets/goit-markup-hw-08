@@ -1,33 +1,29 @@
 .portfolio {
+  &__services {
+    margin-bottom: 40px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 50px;
+    }
+  }
   &__services-list {
     @extend %list;
-    // @extend %flex-centered;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: -8px;
+    margin-top: -15px;
 
-    margin-bottom: 50px;
-
-    @media screen and (min-width: 320px) and (max-width: $mobile) {
-      display: flex;
-      flex-wrap: wrap;
-      margin-bottom: 40px;
-      margin-top: -15px;
-      margin-left: -8px;
-    }
     @media screen and (min-width: $tablet) {
-      display: flex;
-      flex-wrap: nowrap;
-      margin-bottom: 40px;
       justify-content: center;
     }
   }
   &__service-item {
-    @media screen and (min-width: $mobile) and (max-width: 767px) {
-      margin-top: 15px;
-      margin-left: 8px;
-    }
-    @media screen and (min-width: $tablet) {
-      &:not(:last-child) {
-        margin-right: 8px;
-      }
-    }
+    margin-left: 8px;
+    margin-top: 15px;
   }
 }
