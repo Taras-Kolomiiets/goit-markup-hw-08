@@ -1,12 +1,12 @@
 .hero {
   max-width: 1600px;
-  min-height: 600px;
+  min-height: 400px;
 
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 
   background-position: center;
   background-repeat: no-repeat;
@@ -23,6 +23,9 @@
       url('../images/hero-tablet.jpg');
   }
   @media screen and (min-width: $desktop) {
+    min-height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: linear-gradient(to right, $overlay-color, $overlay-color),
       url('../images/banner-photo.jpg');
   }
